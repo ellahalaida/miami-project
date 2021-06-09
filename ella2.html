@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miami</title>
+	<meta charset="utf-8" />
+	<style>
+		body { 
+			margin: 0;
+			background-color: #fbfbff;
+			background-image:  linear-gradient(#d6d6d6 1px, transparent 1px), linear-gradient(to right, #d6d6d6 1px, #fbfbff 1px);
+			background-size: 20px 20px;
+		}
+		.container {
+			margin: 20px;
+		}
+		.container h1 {
+			font-size: 30px;
+			color: #191970;
+		}
+		span.what {
+            color: #f00;
+            font-size: 30px;
+        }
+        .text {
+        	display: flex;
+        	align-items: start;
+        	font-family: 'Dancing Script', cursive;
+        	padding: 8px;
+        }
+        .text p { 
+        	padding: 0 40px;
+        	margin: 0;
+        }
+        
+        .text img {
+        	width: 40%;
+        	height: 40%;
+        }
+        .navigation {
+        	display: flex;
+        	flex-flow: row wrap;
+        	justify-content:  space-around;
+
+        	list-style: none;
+        	margin: 0;
+        	background: deepskyblue;
+        	font-family: 'Fira Sans Condensed', sans-serif;
+        	font-size: 18px;
+        }
+        .navigation li {
+        	display: block;
+        	padding: 16px 0;
+        }
+        .navigation li a {
+        	padding: 16px;
+        	text-decoration: none;
+        	color: white;
+        }
+        .navigation li:hover {
+        	background: #1565C0;
+        }
+/*        @media all and (max-width: 800px) {
+        	.navigation {
+        		justify-content: space-around;
+        	}
+        }*/
+
+        @media all and (max-width: 600px) {
+        	.navigation {
+        		flex-flow: column wrap;
+        		padding: 0;
+        	}
+        	.navigation li {
+        		padding: 0;
+        	}
+        	.navigation li a {
+        		display: block;
+        		width: 100%;
+        		text-align: center;
+        		padding: 10px 0;
+        		border-top: 1px solid rgba(255,255,255,0.3);
+        		border-bottom: 1px solid rgba(0,0,0,0.1);
+        	}
+        	.navigation li: last-of-type a {
+        		border-bottom: none;
+        	}
+        }
+
+
+	</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<ul class="navigation">
+		<li><a href="ella.html">Home</a></li>
+		<li><a href="https://www.timeout.com/miami/things-to-do/best-things-to-do-in-miami">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</header>
+<div class="container">
+	<h1>Miami</h1>			
+	<div class="text">
+		<img src="todo.jpg"
+		     alt= "what to do">
+	 <p>
+		<span class="what">What is it?</span> This food-and-culture destination in South Beach boasts some of the best dining in the city, all hand-picked by our editors. 
+	<br>
+	    <span class="what">Why go?</span> Time Out Miami take all these amazing chefs, restaurants and dishes that we rave about online and get them all together in one place for the perfect culinary sample of a city. 
+	 </p>	
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML</title>
+  <meta charset="UTF-8" />
+  <style>
+    .shadowbox {
+      /*width: 15em;*/
+      border: 1px solid #333;
+      box-shadow: 8px 8px 5px #444;
+      padding: 8px 12px;
+      background-image: linear-gradient(180deg,#fff, #ddd 40%, #ccc);
+      } 
+    .shadowbox::first-letter {
+      font-size: 3rem;
+    }
+    .warning {
+      border: 5px ridge #f00;
+      background-color: #ff0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .warning .img-wrap {
+      height: 30vw;
+      width: 49%;
+      overflow: hidden;
+      border-radius: 50px;
+      transition: border-radius 2s, transform 1s;
+    }
+    .warning .img-wrap:hover {
+      border-radius: 0;
+      transform: rotate(5deg);
+    }
+    .warning .img-wrap img {
+      height: 100%;
+    }
+    
+    .warning p {
+      font: small-caps bold 1.2rem sans-serif;
+      text-align: center;
+    }
+    .warning .cruise {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    li {
+      font: 1rem 'Fira Sans', sans-serif;
+      margin-bottom: .5rem;
+    }
+    form.form-example {
+      display: table;
+    }
+    div.form-example {
+      display: table-row;
+    }
+    label, input {
+      margin-bottom: 10px;
+    }
+    label {
+      padding-right: 10px;
+    }
+    body {
+      /*background-image: url("https://loveandspecs.com/wp-content/uploads/2020/08/cute-summer-zoom-backgrounds-lemon.png");*/
+      /*background-size: contain;*/
+      background: rgb(255,253,254);
+      background: radial-gradient(circle, rgba(255,253,254,1) 0%, rgba(224,238,255,1) 100%);
+    }
+    header {
+      font-size: 30px;
+      color: #191970;
+      text-align: center;
+      
+    }
+    .svg {
+      color: green;
+    }
+    header {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+88 */
+      background: #fefcea; /* Old browsers */
+      background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 88%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 88%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+
+    }
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 0px;
+      font-size: 30px;
+      color: white;
+      background: red;
+    }
+    span.best {
+    color: #f00;
+    }
+    .text::first-letter {
+      font-size: 3rem;
+    }
+    .zoom {
+      width: 500px;
+      height: 250px;
+      overflow: hidden;
+      margin: 20px;
+    }
+    .zoom img {
+      width: 100%;
+      transition: 0.5s all ease-in-out;
+    }
+    .zoom:hover img {
+      transform: scale(1.1);
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      Miami Beach City in Florida
+    </h1>
+  </header>
+  <nav>
+    <a href="ella2.html">
+    Miami Travel Guide
+    </a>
+  </nav> 
+  <div>
+    <svg class="svg" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="
+      width: 100px;
+      color: black;
+  "><path d="M18 13v7H4V6h5.02c.05-.71.22-1.38.48-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5l-2-2zm-1.5 5h-11l2.75-3.53 1.96 2.36 2.75-3.54zm2.8-9.11c.44-.7.7-1.51.7-2.39C20 4.01 17.99 2 15.5 2S11 4.01 11 6.5s2.01 4.5 4.49 4.5c.88 0 1.7-.26 2.39-.7L21 13.42 22.42 12 19.3 8.89zM15.5 9C14.12 9 13 7.88 13 6.5S14.12 4 15.5 4 18 5.12 18 6.5 16.88 9 15.5 9z">
+    </path>
+    </svg>
+  </div>
+  <main>
+    <h2>
+      Miami Beach
+    </h2>
+    <div class="text">
+    <p>
+      Miami Beach is a coastal resort city in Miami-Dade County, Florida, United States. 
+      It was incorporated on March 26, 1915.
+      The municipality is located on natural and man-made barrier islands between the Atlantic Ocean and Biscayne Bay, the latter of which separates the Beach from the mainland city of Miami. 
+    </p>
+  </div>
+  </main>
+  <ol>
+    <li>
+       City Manager - Jimmy L. Morales
+    </li>
+    <li>
+      City Clerk - Rafael E. Granado
+    </li>
+  </ol>
+  <p id="bob" title="Goodbye">
+      Hello
+    <a href="https://en.wikipedia.org/wiki/Miami_Beach,_Florida">
+      link text
+    </a>
+  </p>
+  <h2>
+    image of Miami city
+  </h2>
+  <div class="zoom">
+    <img src ="10156.jpg" 
+         alt="alternate text">
+  </div>      
+  <h3>
+    What to do in South Pointe Park Miami
+  </h3>
+  </p>
+  <div class="shadowbox">
+    <p>
+      This park is ideal to enjoy with family or friends. 
+      It has a mini water park for the enjoyment of the little ones. 
+      In its gardens, under the shade of the trees you can have a picnic, read and even take a nap.
+      And if rich eating is about, in its facilities is the famous restaurant Smith & Wollensky.
+    </p>
+  </div>
+  <br>
+  <br>
+  <div class="warning">
+    <div class="cruise">
+      <div class="img-wrap">
+        <img src="Getty11.jpg"
+            alt="FAT BEAR WEEK."  />
+      </div>
+      <div class="img-wrap">
+        <img src="city.jpg"
+             alt="city of Miami" />      
+      </div>
+    </div>
+    <p>
+      The <span class="best">Best</span> Place To Cruise
+    </p>
+  </div>
+  <p>
+    <h2>
+    Cool Facts About Miami Beach
+    </h2>
+  </p>
+  <div>
+    <input type="checkbox" id="miami01" name="miami1" checked>
+    <label for="miami01">
+      A Great Place To Star Gaze
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" id="miami02" name="miami2">
+    <label for="miami02">
+      Home To The World’s Largest Art Deco Architecture
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" id="miami03" name="miami3">
+    <label for="miami03">
+      Bordered By Two National Parks
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" id="miami04" name="miami4">
+    <label for="miami04">
+      Lots Of Buried Treasure To Be Found
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" id="miami05" name="miami5">
+    <label for="miami05">
+      The Home Of Suntan Lotion
+    </label>
+  </div>
+  <h1>It is <sup>my</sup>big <sub>nice</sub> family.
+  </h1>
+  <form action="" method="get" class="form-example">
+   <div class="form-example">
+     <label for="name">Enter your name:
+     </label>
+     <input type="text" name="name" id="name" required>
+   </div>
+   <div class="form-example">
+     <label for="email"> Enter your email:
+     </label>
+     <input type="email" name="email" id="email" required>
+   </div>
+   <div class="form-example">
+     <input type="submit" value="Subscribe">
+   </div>
+  </form>
+  <p> copyright&copy; 2021</p>
+  
+  <a name="top">
+  </a>
+  <button id="button">
+  
+  <a href="///D:/projects/test_repeat/ella.html">
+  Back to the top
+  </a>
+  </button>
+  <div class="fixed">
+    <span>Miami</span>
+  </div>
+
+</body>
+
+</html>
